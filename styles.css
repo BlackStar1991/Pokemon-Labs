@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Mukta", sans-serif;
+}
+
+.slider {
+  position: relative;
+  height: 100dvh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider_list {
+  position: relative;
+  list-style: none;
+  width: 100vw;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.slider_item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.block_description {
+  position: relative;
+  padding: 10px;
+  width: calc(100% - 450px);
+  background: rgba(64, 64, 64, 0.25);
+  border: 1px solid hsl(0, 0%, 40%);
+  border-radius: 12px;
+}
+
+.pok_head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+
+.pok_number {
+  margin: 0 10px;
+}
+
+.pok_row {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.pok_type {
+  display: inline-block;
+  padding: 5px 10px 5px 34px;
+  border-radius: 4px;
+  color: #000;
+  background-size: cover;
+  box-shadow: 0 8px 4px 4px rgba(4, 4, 4, 0.2);
+}
+
+.type_electric {
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #e0ac29, transparent), #fee529 url("icons/icon-electric.svg") 0 50% no-repeat;
+}
+
+.pok_desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 4vh;
+  padding: 20px;
+  border: 1px solid hsl(0, 0%, 40%);
+  background-color: #181616;
+  border-radius: 12px;
+}
+
+.pok_elements {
+  width: 100%;
+  max-width: 200px;
+  margin-right: 10px;
+}
+
+.pok_elements p {
+  margin-bottom: 10px;
+}
+
+.pok_elements .icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+
+.icon_male {
+  background: url("icons/male.svg") 50% 50% no-repeat;
+}
+
+.icon_female {
+  background: url("icons/female.svg") 50% 50% no-repeat;
+}
+
+.pok_value {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pok_value li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pok_value b {
+  width: 150px;
+}
+
+.pok_stats {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 20px;
+  background: linear-gradient(to left, #026325, #0d712e, #8BC541, #F5EA14, #FFC50A, #F6931D, #FF3C00, #FF0000);
+  overflow: hidden;
+}
+.pok_stats:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 2;
+}
+.pok_stats[data-id="1"]:before {
+  transform: translateX(6.6666666667%);
+}
+.pok_stats[data-id="2"]:before {
+  transform: translateX(13.3333333333%);
+}
+.pok_stats[data-id="3"]:before {
+  transform: translateX(20%);
+}
+.pok_stats[data-id="4"]:before {
+  transform: translateX(26.6666666667%);
+}
+.pok_stats[data-id="5"]:before {
+  transform: translateX(33.3333333333%);
+}
+.pok_stats[data-id="6"]:before {
+  transform: translateX(40%);
+}
+.pok_stats[data-id="7"]:before {
+  transform: translateX(46.6666666667%);
+}
+.pok_stats[data-id="8"]:before {
+  transform: translateX(53.3333333333%);
+}
+.pok_stats[data-id="9"]:before {
+  transform: translateX(60%);
+}
+.pok_stats[data-id="10"]:before {
+  transform: translateX(66.6666666667%);
+}
+.pok_stats[data-id="11"]:before {
+  transform: translateX(73.3333333333%);
+}
+.pok_stats[data-id="12"]:before {
+  transform: translateX(80%);
+}
+.pok_stats[data-id="13"]:before {
+  transform: translateX(86.6666666667%);
+}
+.pok_stats[data-id="14"]:before {
+  transform: translateX(93.3333333333%);
+}
+.pok_stats[data-id="15"]:before {
+  transform: translateX(100%);
+}
+.pok_stats:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  --_g: transparent 90deg, #000 0;
+  background: conic-gradient(from 90deg at 1px 1px, var(--_g)), conic-gradient(from 90deg at 1px 1px, var(--_g)), transparent;
+  background-size: 10px 100%;
+  z-index: 3;
+}
+
+.slider_button {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+  opacity: 0.8;
+}
+.slider_button:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=styles.css.map */
