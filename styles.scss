@@ -65,20 +65,22 @@ $size: 46vh;
 }
 
 $s1: $size/2;
+$s2: $s1*3.4;
+$s3: $s1*1.6;
 
 .slider_item{
   &:nth-child(1){
-    transform: translate3d(-$s1*3.4, 0, 0)  scale(0.8) rotateY(45deg) ;
+    transform: translate3d(-$s2, 0, 0)  scale(0.8) rotateY(45deg) ;
     z-index: 1;
     opacity: 0;
   }
   &:nth-child(2){
-    transform: translate3d(-$s1*3.4, 0, 0)  scale(0.8) rotateY(45deg) ;
+    transform: translate3d(-$s2, 0, 0)  scale(0.8) rotateY(45deg) ;
     z-index: 1;
     opacity: 0;
   }
   &:nth-child(3){
-    transform: translate3d(-$s1*1.6, 0, 0)  scale(0.9) rotateY(15deg) ;
+    transform: translate3d(-$s3, 0, 0)  scale(0.9) rotateY(15deg) ;
     z-index: 3;
     opacity: 0;
   }
@@ -90,15 +92,15 @@ $s1: $size/2;
     }
   }
   &:nth-child(5){
-    transform: translate3d($s1*1.6, 0, 0)  scale(0.9) rotateY(-15deg) ;
+    transform: translate3d($s3, 0, 0)  scale(0.9) rotateY(-15deg) ;
     z-index: 3;
   }
   &:nth-child(6){
-    transform: translate3d($s1*3.4, 0, 0)  scale(0.8) rotateY(-45deg) ;
+    transform: translate3d($s2, 0, 0)  scale(0.8) rotateY(-45deg) ;
     z-index: 2;
   }
   &:nth-child(7){
-    transform: translate3d($s1*3.4, 0, 0)  scale(0.8) rotateY(-45deg) ;
+    transform: translate3d($s2, 0, 0)  scale(0.8) rotateY(-45deg) ;
     z-index: -1;
   }
 }
@@ -293,14 +295,15 @@ $s1: $size/2;
   width: 150px;
 }
 
-.pok_stats{
+.pok_stats {
+  --bg-gradient: linear-gradient(to left, #026325, #0d712e, #8BC541, #F5EA14, #FFC50A, #F6931D, #FF3C00, #FF0000);
+  --animation-duration: 2s;
   position: relative;
   display: inline-block;
   width: 150px;
   height: 20px;
-  background: linear-gradient(to left, #026325, #0d712e, #8BC541, #F5EA14, #FFC50A, #F6931D, #FF3C00, #FF0000);
+  background: var(--bg-gradient);
   overflow: hidden;
-
 
   &:before {
     content: '';
@@ -311,25 +314,29 @@ $s1: $size/2;
     height: 100%;
     background-color: #fff;
     z-index: 2;
-    animation: moving 2s forwards;
+    animation: moving var(--animation-duration) forwards;
   }
 
   @for $i from 1 through 15 {
-    &[data-id="#{$i}"]:before {
-      animation-name: moving-#{$i};
+    &[data-id="#{$i}"] {
+      --animation-end: calc(100% / 15 * #{$i});
+      &:before {
+        animation-name: moving;
+        --translate-x-end: var(--animation-end);
+      }
     }
 
-    @keyframes moving-#{$i} {
+    @keyframes moving {
       0% {
         transform: translateX(100%);
       }
       100% {
-        transform: translateX(calc(100% / 15 * $i));
+        transform: translateX(var(--translate-x-end));
       }
     }
   }
 
-  &:after{
+  &:after {
     content: '';
     position: absolute;
     top: 0;
@@ -367,4 +374,98 @@ $s1: $size/2;
 
 .prev{
   transform: scale(-1, 1);
+}
+
+
+@media (max-height:640px) {
+
+  .block_description {
+    width: calc(110vh);
+    left: calc(-100% - $size);
+  }
+}
+
+@media (max-height:560px) {
+  .logo{
+    display: none;
+  }
+  $size: 55vh;
+  .slider{
+    height: 90vh;
+  }
+  .slider_item,
+  .block_img{
+    height: $size;
+    width: $size;
+  }
+
+  .block_description {
+    width: calc(150vh);
+    left: calc(-100% - $size*1.2);
+  }
+
+  .pok_row{
+    margin-bottom: 5px;
+  }
+}
+
+
+
+@media (max-height:500px) {
+
+  $size: 70vh;
+  .slider_item,
+  .block_img{
+    height: $size;
+    width: $size;
+  }
+
+  .block_description {
+    width: calc(170vh);
+    left: calc(-100% - $size/1.6);
+  }
+
+  $s1: $size/2;
+  $s2: $s1*3.4;
+  $s3: $s1*1.6;
+
+  .slider_item{
+    &:nth-child(1){
+      transform: translate3d(-$s2, 0, 0)  scale(0.8) rotateY(45deg) ;
+      z-index: 1;
+      opacity: 0;
+    }
+    &:nth-child(2){
+      transform: translate3d(-$s2, 0, 0)  scale(0.8) rotateY(45deg) ;
+      z-index: 1;
+      opacity: 0;
+    }
+    &:nth-child(3){
+      transform: translate3d(-$s3, 0, 0)  scale(0.9) rotateY(15deg) ;
+      z-index: 3;
+      opacity: 0;
+    }
+    &:nth-child(4){
+      transform: translate3d(0, 0, 0)  scale(1) rotateY(0deg) ;
+      z-index: 4;
+      .block_description{
+        opacity: 1;
+      }
+    }
+    &:nth-child(5){
+      transform: translate3d($s3, 0, 0)  scale(0.9) rotateY(-15deg) ;
+      z-index: 3;
+    }
+    &:nth-child(6){
+      transform: translate3d($s2, 0, 0)  scale(0.8) rotateY(-45deg) ;
+      z-index: 2;
+    }
+    &:nth-child(7){
+      transform: translate3d($s2, 0, 0)  scale(0.8) rotateY(-45deg) ;
+      z-index: -1;
+    }
+  }
+
+
+
 }

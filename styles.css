@@ -269,11 +269,13 @@ body {
 }
 
 .pok_stats {
+  --bg-gradient: linear-gradient(to left, #026325, #0d712e, #8BC541, #F5EA14, #FFC50A, #F6931D, #FF3C00, #FF0000);
+  --animation-duration: 2s;
   position: relative;
   display: inline-block;
   width: 150px;
   height: 20px;
-  background: linear-gradient(to left, #026325, #0d712e, #8BC541, #F5EA14, #FFC50A, #F6931D, #FF3C00, #FF0000);
+  background: var(--bg-gradient);
   overflow: hidden;
 }
 .pok_stats:before {
@@ -285,171 +287,231 @@ body {
   height: 100%;
   background-color: #fff;
   z-index: 2;
-  animation: moving 2s forwards;
+  animation: moving var(--animation-duration) forwards;
+}
+.pok_stats[data-id="1"] {
+  --animation-end: calc(100% / 15 * 1);
 }
 .pok_stats[data-id="1"]:before {
-  animation-name: moving-1;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-1 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(6.6666666667%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="2"] {
+  --animation-end: calc(100% / 15 * 2);
 }
 .pok_stats[data-id="2"]:before {
-  animation-name: moving-2;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-2 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(13.3333333333%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="3"] {
+  --animation-end: calc(100% / 15 * 3);
 }
 .pok_stats[data-id="3"]:before {
-  animation-name: moving-3;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-3 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(20%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="4"] {
+  --animation-end: calc(100% / 15 * 4);
 }
 .pok_stats[data-id="4"]:before {
-  animation-name: moving-4;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-4 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(26.6666666667%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="5"] {
+  --animation-end: calc(100% / 15 * 5);
 }
 .pok_stats[data-id="5"]:before {
-  animation-name: moving-5;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-5 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(33.3333333333%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="6"] {
+  --animation-end: calc(100% / 15 * 6);
 }
 .pok_stats[data-id="6"]:before {
-  animation-name: moving-6;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-6 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(40%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="7"] {
+  --animation-end: calc(100% / 15 * 7);
 }
 .pok_stats[data-id="7"]:before {
-  animation-name: moving-7;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-7 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(46.6666666667%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="8"] {
+  --animation-end: calc(100% / 15 * 8);
 }
 .pok_stats[data-id="8"]:before {
-  animation-name: moving-8;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-8 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(53.3333333333%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="9"] {
+  --animation-end: calc(100% / 15 * 9);
 }
 .pok_stats[data-id="9"]:before {
-  animation-name: moving-9;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-9 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(60%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="10"] {
+  --animation-end: calc(100% / 15 * 10);
 }
 .pok_stats[data-id="10"]:before {
-  animation-name: moving-10;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-10 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(66.6666666667%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="11"] {
+  --animation-end: calc(100% / 15 * 11);
 }
 .pok_stats[data-id="11"]:before {
-  animation-name: moving-11;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-11 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(73.3333333333%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="12"] {
+  --animation-end: calc(100% / 15 * 12);
 }
 .pok_stats[data-id="12"]:before {
-  animation-name: moving-12;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-12 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(80%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="13"] {
+  --animation-end: calc(100% / 15 * 13);
 }
 .pok_stats[data-id="13"]:before {
-  animation-name: moving-13;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-13 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(86.6666666667%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="14"] {
+  --animation-end: calc(100% / 15 * 14);
 }
 .pok_stats[data-id="14"]:before {
-  animation-name: moving-14;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-14 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(93.3333333333%);
+    transform: translateX(var(--translate-x-end));
   }
+}
+.pok_stats[data-id="15"] {
+  --animation-end: calc(100% / 15 * 15);
 }
 .pok_stats[data-id="15"]:before {
-  animation-name: moving-15;
+  animation-name: moving;
+  --translate-x-end: var(--animation-end);
 }
-@keyframes moving-15 {
+@keyframes moving {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(var(--translate-x-end));
   }
 }
 .pok_stats:after {
@@ -486,6 +548,78 @@ body {
 
 .prev {
   transform: scale(-1, 1);
+}
+
+@media (max-height: 640px) {
+  .block_description {
+    width: 110vh;
+    left: calc(-100% - 46vh);
+  }
+}
+@media (max-height: 560px) {
+  .logo {
+    display: none;
+  }
+  .slider {
+    height: 90vh;
+  }
+  .slider_item,
+  .block_img {
+    height: 55vh;
+    width: 55vh;
+  }
+  .block_description {
+    width: 150vh;
+    left: calc(-100% - 66vh);
+  }
+  .pok_row {
+    margin-bottom: 5px;
+  }
+}
+@media (max-height: 500px) {
+  .slider_item,
+  .block_img {
+    height: 70vh;
+    width: 70vh;
+  }
+  .block_description {
+    width: 170vh;
+    left: calc(-100% - 43.75vh);
+  }
+  .slider_item:nth-child(1) {
+    transform: translate3d(-119vh, 0, 0) scale(0.8) rotateY(45deg);
+    z-index: 1;
+    opacity: 0;
+  }
+  .slider_item:nth-child(2) {
+    transform: translate3d(-119vh, 0, 0) scale(0.8) rotateY(45deg);
+    z-index: 1;
+    opacity: 0;
+  }
+  .slider_item:nth-child(3) {
+    transform: translate3d(-56vh, 0, 0) scale(0.9) rotateY(15deg);
+    z-index: 3;
+    opacity: 0;
+  }
+  .slider_item:nth-child(4) {
+    transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
+    z-index: 4;
+  }
+  .slider_item:nth-child(4) .block_description {
+    opacity: 1;
+  }
+  .slider_item:nth-child(5) {
+    transform: translate3d(56vh, 0, 0) scale(0.9) rotateY(-15deg);
+    z-index: 3;
+  }
+  .slider_item:nth-child(6) {
+    transform: translate3d(119vh, 0, 0) scale(0.8) rotateY(-45deg);
+    z-index: 2;
+  }
+  .slider_item:nth-child(7) {
+    transform: translate3d(119vh, 0, 0) scale(0.8) rotateY(-45deg);
+    z-index: -1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
