@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url("lab.jpg") 50% 50% no-repeat;
+  background: url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/lab.jpg") 50% 50% no-repeat;
   background-size: 100%;
   color: #fff;
   font-family: "Mukta", sans-serif;
@@ -33,9 +33,10 @@ body {
 .slider_list {
   position: relative;
   list-style: none;
-  width: 100vw;
+  width: 100%;
   height: 46vh;
   perspective: 1000px;
+  z-index: 1;
 }
 
 .slider_item {
@@ -156,64 +157,64 @@ body {
 }
 
 .type_electric {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #e0ac29, transparent), #fee529 url("icons/icon-electric.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #e0ac29, transparent), #fee529 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-electric.svg") 0 50% no-repeat;
   color: #000;
 }
 
 .type_ground {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #413002, transparent), #795200 url("icons/icon-ground.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #413002, transparent), #795200 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-ground.svg") 0 50% no-repeat;
 }
 
 .type_water {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #0a66ad, transparent), #239dd8 url("icons/icon-water.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #0a66ad, transparent), #239dd8 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-water.svg") 0 50% no-repeat;
 }
 
 .type_grass {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #00a732, transparent), #00791a url("icons/icon-grass.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #00a732, transparent), #00791a url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-grass.svg") 0 50% no-repeat;
 }
 
 .type_ice {
-  background: radial-gradient(75% 35% at 50% 85%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #096cae, transparent), #19aff4 url("icons/icon-ice.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 35% at 50% 85%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #096cae, transparent), #19aff4 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-ice.svg") 0 50% no-repeat;
 }
 
 .type_rock {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #7d7a76, transparent), #4d4745 url("icons/icon-rock.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #7d7a76, transparent), #4d4745 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-rock.svg") 0 50% no-repeat;
 }
 
 .type_flying {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #09634e, transparent), #08a081 url("icons/icon-flying.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #09634e, transparent), #08a081 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-flying.svg") 0 50% no-repeat;
 }
 
 .type_psychic {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #f970ff, transparent), #c222c7 url("icons/icon-psychic.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #f970ff, transparent), #c222c7 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-psychic.svg") 0 50% no-repeat;
 }
 
 .type_fire {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #fe7b02, transparent), #b01608 url("icons/icon-fire.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #fe7b02, transparent), #b01608 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-fire.svg") 0 50% no-repeat;
 }
 
 .type_normal {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #a3a09b, transparent), #3E3F50 url("icons/icon-normal.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #a3a09b, transparent), #3E3F50 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-normal.svg") 0 50% no-repeat;
 }
 
 .type_poison {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #5911a2, transparent), #320767 url("icons/icon-poison.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #5911a2, transparent), #320767 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-poison.svg") 0 50% no-repeat;
 }
 
 .pok_rock {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #999373, transparent), #806644 url("icons/icon-rock.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #999373, transparent), #806644 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-rock.svg") 0 50% no-repeat;
 }
 
 .pok_ground {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #3b3307, transparent), #524204 url("icons/icon-ground.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #3b3307, transparent), #524204 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-ground.svg") 0 50% no-repeat;
 }
 
 .type_fighting {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #6e3251, transparent), #4b3131 url("icons/icon-fighting.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #6e3251, transparent), #4b3131 url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-fighting.svg") 0 50% no-repeat;
 }
 
 .type_steel {
-  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #325b5a, transparent), #63717e url("icons/icon-steel.svg") 0 50% no-repeat;
+  background: radial-gradient(75% 50% at 50% 0%, #f4feff, transparent), radial-gradient(75% 35% at 50% 85%, #325b5a, transparent), #63717e url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/icon-steel.svg") 0 50% no-repeat;
 }
 
 .pok_desc {
@@ -245,11 +246,11 @@ body {
 }
 
 .icon_male {
-  background: url("icons/male.svg") 50% 50% no-repeat;
+  background: url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/male.svg") 50% 50% no-repeat;
 }
 
 .icon_female {
-  background: url("icons/female.svg") 50% 50% no-repeat;
+  background: url("https://raw.githubusercontent.com/BlackStar1991/Pokemon-Labs/main/icons/female.svg") 50% 50% no-repeat;
 }
 
 .pok_value {
